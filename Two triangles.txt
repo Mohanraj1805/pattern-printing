@@ -1,0 +1,15 @@
+a=int(input())
+space=0
+for i in range(1,a+1):
+    if i==1:
+        space=(a*4)-3
+        ans='*'+' '*space+'*'
+        print(ans)
+    elif i==a:
+        print('* '*(a*2))
+    else:
+        space1=' '*((2*i)-4)
+        space2=' ' *(4*(a-i))
+        space3=' '*((2*i)-4)
+        ans= '* ' + space1 +'* '+space2+'* '+space3+'* '
+        print(ans)
